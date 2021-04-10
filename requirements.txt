@@ -1,1 +1,1 @@
-telepot-12.6
+telepot
