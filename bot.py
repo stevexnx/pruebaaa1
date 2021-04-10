@@ -34,7 +34,7 @@ def handle(msg):
             else:
                 bot.sendMessage(chat_id ,"No quedan asientos.")
         except(TypeError, NameError, ValueError):
-            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo #I1. Si persiste, comuniquese con el administrador.")
+            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo .")
 
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
     def Consultar_Articulo(command):
