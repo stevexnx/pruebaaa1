@@ -21,7 +21,7 @@ def handle(msg):
             bot.sendMessage(chat_id,("2) /consultar + (tu matrícula). Para consultar tu numero de ticket."))
             bot.sendMessage(chat_id,("3) /borrar + (tu matrícula). Para eliminarte de la lista."))
         except(TypeError, NameError, ValueError):
-            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo #S1. Si persiste, comuniquese con el administrador.")
+            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo ")
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
     def Ingresar_Articulo(command):
         try:
@@ -46,7 +46,7 @@ def handle(msg):
             else:
                 bot.sendMessage(chat_id, "Usted aún no esta registrado.")
         except(TypeError, NameError, ValueError):
-            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo #C1. Si persiste, comuniquese con el administrador.")
+            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo ")
             
     #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
     def Borrar(command):#funcion para borrar un articulo
@@ -59,7 +59,7 @@ def handle(msg):
             else:
                 bot.sendMessage(chat_id, "Usted no esta registrado.")
         except(TypeError, NameError, ValueError):
-            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo #B1. Si persiste, comuniquese con el administrador.")
+            bot.sendMessage(chat_id,"Ha habido algún error. \nCodigo .")
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
     lista1=['start','/ingresar','/consultar','/borrar']
     div=command.split()
@@ -78,7 +78,7 @@ def handle(msg):
         elif comparacion[0]==("/borrar"):#Para borrar tu compra#
             Borrar(command)#Se debe ingresar la matricula que se quiere borrar#
     except(IndexError):
-        bot.sendMessage(chat_id, ("Ha habido algún error. \nCodigo. #CM.Error. Si persiste, comuniquese con el administrador."))
+        bot.sendMessage(chat_id, ("Ha habido algún error. \nCodigo. "))
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\#
 
 
